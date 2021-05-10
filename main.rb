@@ -25,10 +25,12 @@ class Button
     end
 
     def draw_button
-        if mode == '#111111'
+        if mode == @@dark_mode
+            mode = @@dark_mode
             # darken foreground color for dark mode
             paint(label_text, x, y, foreground_color - 10, mode)
         else
+            mode == @light_mode
             # lighten foreground color for non-dark mode
             paint(label_text, x, y, foreground_color + 10, mode)
         end
