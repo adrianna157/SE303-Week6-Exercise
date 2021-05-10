@@ -10,6 +10,9 @@ def draw_button(label_text, x, y, foreground_color, is_dark_mode)
   end
 end
 
+button = Button.new("dark", 2, 5, 20, '#111111')
+button.draw_button
+
 class Button
     attr_reader :label_text, :x, :y, :foreground_color, :mode 
     
