@@ -1,3 +1,4 @@
+
 def draw_button(label_text, x, y, foreground_color, is_dark_mode)
   if is_dark_mode
     # darken foreground color for dark mode
@@ -9,6 +10,7 @@ def draw_button(label_text, x, y, foreground_color, is_dark_mode)
 end
 
 class Button
+
     attr_reader :label_text, :x, :y, :foreground_color, :mode 
     
     def initialize (label_text, x, y, foreground_color, mode)
@@ -16,7 +18,7 @@ class Button
         @x = x
         @y = y
         @foreground_color = foreground_color
-        @mode = is_dark_mode
+        @mode = mode
     end
 
 
