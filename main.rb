@@ -17,11 +17,11 @@ class Button
         if mode == @@dark_mode
             mode = @@dark_mode
             # darken foreground color for dark mode
-            puts(label_text, x, y, foreground_color - 10, mode)
+            paint(label_text, x, y, foreground_color - 10, mode)
         else
             mode == @light_mode
             # lighten foreground color for non-dark mode
-            puts(label_text, x, y, foreground_color + 10, mode)
+            paint(label_text, x, y, foreground_color + 10, mode)
         end
         end
 end
